@@ -2,8 +2,8 @@ import React from 'react';
 import ToolBar from './components/ToolBar';
 import Todo from './components/Todo';
 import Footer from './components/Footer';
-import NewTodo from './components/NewTodo';
-
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 function App() {
   return (
     <>
@@ -11,12 +11,10 @@ function App() {
         <ToolBar />
       </nav>
       <main>
-        <NewTodo />
         <Todo />
+        <ToastContainer />
       </main>
-      <footer>
         <Footer />
-      </footer>
     </>
 
   );
